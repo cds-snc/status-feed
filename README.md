@@ -1,5 +1,19 @@
 # status-feed
 
+Status feed is a single page application (SPA) presenting the current status of 3rd party software-as-a-service (SaaS) used by CDS in a dashboard-like view.
+
+--
+
+Status est une application web présentant l'état de service des différents logiciels sur demande[^1] (SaaS) de tierces parties.
+
+[^1]: Source de l'expression *logiciels sur demande* https://gdt.oqlf.gouv.qc.ca/ficheOqlf.aspx?Id_Fiche=26519822
+
+Information below generated automatically by Vue 3 [build tools](https://vuejs.org/guide/quick-start.html#with-build-tools).
+
+L'information ici-bas est générée automatiquement à l'aide des [outils de configuration](https://vuejs.org/guide/quick-start.html#with-build-tools) de Vue 3.
+
+---
+
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup
