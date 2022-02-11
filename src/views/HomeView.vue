@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { ref } from "vue";
 import StatusFeed from "@/components/StatusFeed.vue";
 import { useFeedsStore } from "@/stores/feeds";
 const feedsStore = useFeedsStore();
