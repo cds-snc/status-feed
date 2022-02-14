@@ -45,7 +45,9 @@ import { RouterLink, RouterView } from "vue-router";
     </nav>
   </header>
   <main class="bd-main order-1">
-    <RouterView class="container-xl" />
+    <div class="container-xl">
+      <RouterView />
+    </div>
   </main>
 </template>
 
