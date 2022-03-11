@@ -1,1 +1,11 @@
-{"Status": "Statut"}
+{
+  "About": "À propos",
+  "All services operational": "Tous les services sont opérationnels.",
+  "Current status of 3rd party services": "État actuel des services tiers",
+  "Error getting status": "Problème dans la requête de l'état de service",
+  "Filter": "Filtrer",
+  "LangBtn": "EN",
+  "Status": "Statut",
+  "Status unknown": "Statut du service inconnu"
+
+}

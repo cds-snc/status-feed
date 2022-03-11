@@ -1,1 +1,10 @@
-{"Status": "Status"}
+{
+  "About": "About",
+  "All services operational": "All services operational",
+  "Current status of 3rd party services": "Current status of 3rd party services",
+  "Error getting status": "Error getting status",
+  "Filter": "Filter",
+  "LangBtn": "FR",
+  "Status": "Status",
+  "Status unknown": "Status unknown"
+}

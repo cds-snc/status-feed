@@ -7,13 +7,18 @@ const props = defineProps<{
     pattern: string;
   };
 }>();
-const msg = useFeedsStore().getFeedStatus(props.feed.url, props.feed.pattern);
+const statusMsg = useFeedsStore().getFeedStatus(
+  props.feed.url,
+  props.feed.pattern
+);
 </script>
 <template>
   <li class="card">
     <div class="card-body">
       <h2 class="card-title">{{ feed.name }}</h2>
-      <div class="card-text" v-html="msg"></div>
+      <div class="card-text">
+        <p>{{ $t(statusMsg) }}</p>
+      </div>
     </div>
   </li>
 </template>

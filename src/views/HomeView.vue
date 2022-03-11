@@ -7,7 +7,7 @@ const feeds = feedsStore.feeds;
 <script lang="ts"></script>
 
 <template>
-  <h1>Current status of 3rd party services</h1>
+  <h1>{{ $t("Current status of 3rd party services") }}</h1>
   <ul class="card-deck" v-for="feed in feeds" :key="feed.name">
     <StatusFeed :feed="feed" />
   </ul>

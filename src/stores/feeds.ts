@@ -6,7 +6,7 @@ export const useFeedsStore = defineStore({
     feeds: [
       {
         name: "Trello",
-        url: "https://trello.status.atlassian.com/histor2y.atom",
+        url: "https://trello.status.atlassian.com/history.atom",
         pattern: "statuspage",
         lastUpdated: undefined,
         status: "unknown",
@@ -26,10 +26,10 @@ export const useFeedsStore = defineStore({
     getFeedStatus(url: string | undefined, pattern: string) {
       switch (pattern) {
         case "statuspage":
-          if (url !== undefined) return "<p>All services operational</p>";
-          return "<p>Error getting status</p>";
+          if (url !== undefined) return "All services operational";
+          return "Error getting status";
         default:
-          return "<p>Status unknown</p>";
+          return "Status unknown";
       }
     },
     getXML(url: string) {
