@@ -3,6 +3,8 @@ import { createPinia } from "pinia";
 import { createI18n } from "vue-i18n";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap";
+import en from "@/locales/en.json";
+import fr from "@/locales/fr.json";
 
 import App from "./App.vue";
 import router from "./router";
@@ -10,7 +12,10 @@ import router from "./router";
 const i18n = createI18n({
   locale: "en",
   fallbackLocale: "en",
-  messages: { en: { test: "test" } },
+  messages: {
+    en: en,
+    fr: fr,
+  },
 });
 const app = createApp(App);
 

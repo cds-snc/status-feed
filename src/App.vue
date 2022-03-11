@@ -6,7 +6,7 @@ import { RouterLink, RouterView } from "vue-router";
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <RouterLink to="/" class="navbar-brand">Status</RouterLink>
+        <RouterLink to="/" class="navbar-brand">{{ $t("Status") }}</RouterLink>
         <button
           class="navbar-toggler"
           type="button"
