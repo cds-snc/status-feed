@@ -1,14 +1,19 @@
 <script setup lang="ts">
-defineProps<{
-  title: string;
-  msg: string;
+import { useFeedsStore } from "@/stores/feeds";
+const props = defineProps<{
+  feed: {
+    name: string;
+    url?: string;
+    pattern: string;
+  };
 }>();
+const msg = useFeedsStore().getFeedStatus(props.feed.url, props.feed.pattern);
 </script>
 <template>
   <li class="card">
     <div class="card-body">
-      <h2 class="card-title">{{ title }}</h2>
-      <div class="card-text">{{ msg }}</div>
+      <h2 class="card-title">{{ feed.name }}</h2>
+      <div class="card-text" v-html="msg"></div>
     </div>
   </li>
 </template>
